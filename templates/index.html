@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Send a file to Xiangru Chen</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Send a file to Xiangru Chen">
+    <meta name="author" content="Xiangru Chen">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/upload.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,300,400,600,700,800" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="heading">
+	<div class="span12">
+	  <h1>Send a file to Xiangru</h1>
+	</div>
+      </div>
+
+      <div class="subheading">
+	<div class="span12">
+	  Greetings! This is Xiangru's personal file sharing service.
+	  By submitting the following form, you can easily share a file with Xiangru.
+	  It is platform independent and has no particular file size limitations.
+	</div>
+      </div>
+
+      <form class="upload-form" action="{{upload_url}}" method="POST" enctype="multipart/form-data">
+	<input type="text" name="uploader" placeholder="Your name please" autofocus>
+	<input type="file" name="file">
+	<textarea name="note" placeholder="Notes about this file (optional)"></textarea>
+	<button class="btn btn-large btn-primary btn-block" type="submit">SEND!</button>
+      </form>
+
+      <div class="footer">
+	<div class="span12">
+	  Copyright &copy <a target="_blank" href="http://www.xrchen.com">xrchen.com</a>
+	</div>
+      </div>
+
+    </div>
+  </body>
+</html>

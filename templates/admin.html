@@ -1,0 +1,33 @@
+{% autoescape true %}
+<html>
+  <head>
+    <title>Files</title>
+  </head>
+  <body>
+    <h1>Files</h1>
+
+    <table border="1">
+      <tr>
+	<th>Uploader</th>
+	<th>Timestamp</th>
+	<th>Filename</th>
+	<th>Size</th>
+	<th>Link</th>
+      </tr>
+      {% for f in files %}
+      <tr>
+	<td>{{f.uploader}}</td>
+	<td>{{f.uploaded}}</td>
+	<td>{{f.filename}}</td>
+	<td>{{f.size}}</td>
+	<td><a href="{{f.serve_url()}}" target="_blank">Link</a></td>
+      </tr>
+      {% endfor %}
+    </table>
+
+    {% if has_more %}
+    <a href="/admin/files/?cursor={{next_curs}}&count={{count}}">next page</a>
+    {% endif %}
+  </body>
+</html>
+{% endautoescape %}

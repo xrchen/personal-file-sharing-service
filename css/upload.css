@@ -1,0 +1,45 @@
+body {
+    font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #eee;
+}
+
+.container {
+    max-width: 400px;
+}
+
+.heading, .subheading {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    text-align: center;
+    margin: 0px auto 15px auto;
+}
+
+.upload-form {
+    margin: 0px auto;
+    padding: 20px;
+}
+
+input[type="text"] {
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+}
+
+input, textarea {
+    padding: 5px;
+}
+
+button[type="submit"] {
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 50px;
+    font-size: 11px;
+    color: #CCCCCC;
+    text-align: center;
+}
